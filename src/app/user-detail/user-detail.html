@@ -1,0 +1,20 @@
+<h2>Kullanıcı Detayı</h2>
+
+<div *ngIf="user">
+  <p><strong>Ad:</strong> {{ user.name }}</p>
+  <p><strong>Kullanıcı Adı:</strong> {{ user.username }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+  <p><strong>Telefon:</strong> {{ user.phone }}</p>
+  <p><strong>Website:</strong> {{ user.website }}</p>
+  <p><strong>Şirket:</strong> {{ user.company?.name }}</p>
+</div>
+
+<hr>
+
+<h3>Gönderiler</h3>
+<ul>
+  <li *ngFor="let post of posts">
+    <strong>{{ post.title }}</strong>
+    <p>{{ post.body }}</p>
+  </li>
+</ul>

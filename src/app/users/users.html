@@ -1,0 +1,24 @@
+<h2>Kullanıcı Listesi</h2>
+
+<table border="1" cellpadding="8">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>İsim</th>
+      <th>Kullanıcı Adı</th>
+      <th>Email</th>
+      <th>Detay</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <td>{{ user.id }}</td>
+      <td>{{ user.name }}</td>
+      <td>{{ user.username }}</td>
+      <td>{{ user.email }}</td>
+      <td>
+        <a [routerLink]="['/users', user.id]">Detay</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
