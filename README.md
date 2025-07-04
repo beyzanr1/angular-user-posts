@@ -2,6 +2,7 @@
 
 Bu proje, Angular kullanılarak geliştirilmiş bir kullanıcı listeleme ve detay görüntüleme uygulamasıdır. Temel olarak sahte bir API üzerinden kullanıcı verileri çekilir ve kullanıcılar arayüzde listelenir. Her kullanıcı için detay sayfasına geçiş yapılabilir.
 
+
  Kullanılan Teknolojiler
 
 - Angular 17 (standalone yapı)
